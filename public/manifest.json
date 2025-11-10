@@ -1,0 +1,36 @@
+{
+  "name": "Malika's 23rd Birthday",
+  "short_name": "Malika Birthday",
+  "description": "A special birthday website for Malika filled with love and memories",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFE0EC",
+  "theme_color": "#FFB6C1",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["lifestyle", "social"],
+  "lang": "en",
+  "dir": "ltr"
+}
