@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Pacifico&family=Caveat:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(135deg, #FFE0EC 0%, #E6E6FA 25%, #F7E7CE 50%, #F4C2C2 75%, #D8BFD8 100%);
+    background-attachment: fixed;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Great Vibes', cursive;
+  }
+
+  .romantic-text {
+    font-family: 'Pacifico', cursive;
+  }
+
+  .handwritten {
+    font-family: 'Caveat', cursive;
+  }
+}
+
+@layer components {
+  .glass-morphism {
+    @apply bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl shadow-lg;
+  }
+
+  .romantic-button {
+    @apply bg-gradient-to-r from-romantic-pink to-love-red text-white px-6 py-3 rounded-full font-bold transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-glow;
+  }
+
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .heart-glow {
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
+  }
+}
+
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+/* Ensure sections have proper spacing for header */
+section[id] {
+  scroll-margin-top: 100px;
+  padding-top: 2rem;
+}
+
+/* Home section doesn't need extra padding since it's full screen */
+#home {
+  padding-top: 0;
+}
+
+body {
+  background: linear-gradient(-45deg, #FFE0EC, #E6E6FA, #F7E7CE, #F4C2C2, #D8BFD8);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 182, 193, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #FFB6C1, #FF69B4);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #FFA6C9, #FFB6C1);
+}
+
+/* Blob animations for HeroSection */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
