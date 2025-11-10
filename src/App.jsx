@@ -102,20 +102,32 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="relative py-8 text-center bg-gradient-to-r from-purple-gold/20 to-love-red/20">
+      <footer className="relative py-8 md:py-12 px-4 text-center bg-gradient-to-r from-purple-gold/20 to-love-red/20">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="glass-morphism mx-auto max-w-4xl p-6"
+          className="glass-morphism mx-auto max-w-6xl p-6 md:p-8"
         >
-          <p className="text-2xl font-romantic text-rose-gold">
-            Made with endless love for my beautiful Malika 💕
-          </p>
-          <p className="text-lg text-purple-gold mt-2">
-            Forever yours, always and forever 💖
-          </p>
+          <div className="space-y-3 md:space-y-4">
+            <p className="text-xl md:text-2xl font-romantic text-rose-gold">
+              Made with endless love for my beautiful Malika 💕
+            </p>
+            <p className="text-lg md:text-xl text-purple-gold">
+              Forever yours, always and forever 💖
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-base md:text-lg text-purple-gold font-romantic">
+              <span>Arbab Malika Forever In Sha Allah 🤲</span>
+              <span className="hidden sm:inline">|</span>
+              <span>Arina In Sha Allah Forever 👶</span>
+            </div>
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-base md:text-lg text-rose-gold font-romantic">
+              <span>Mlw In Sha Allah Forever 💍</span>
+              <span className="hidden sm:inline">|</span>
+              <span>Created & Designed by your Man - Arbab 💻❤️</span>
+            </div>
+          </div>
         </motion.div>
       </footer>
     </div>
